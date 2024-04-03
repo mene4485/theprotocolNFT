@@ -1,4 +1,4 @@
 # The Protocol NFT
 This is the official page of a NFT project that is not running anymore. 
 
-Here's the website link explaining the project : [The Protocol NFT](https://mene4485.github.io/theprotocolNFT/)
+Here's the website link explaining the project : <a href="https://mene4485.github.io/theprotocolNFT/" target="_blank" rel="noopener noreferrer">The Protocol NFT</a>
