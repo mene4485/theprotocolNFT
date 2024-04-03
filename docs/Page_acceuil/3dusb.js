@@ -71,7 +71,7 @@ function init() {
   //controls.addEventListener('change', renderer);
 
   var loader = new GLTFLoader();
-  loader.load("theprotocolNFT/Image/USB.glb", function (gltf) {
+  loader.load("./Image/USB.glb", function (gltf) {
     obj = gltf.scene;
     scene.add(gltf.scene);
     animate();
