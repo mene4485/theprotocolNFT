@@ -1,0 +1,37 @@
+{
+	"folders": [
+		{
+			"path": "../../Cv site"
+		},
+		{
+			"path": "../../LoginButtonForRasounet"
+		},
+		{
+			"path": "../../Mes projets Arduino Site"
+		},
+		{
+			"path": "../../MesProjetsArduino"
+		},
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../PRTCL2"
+		},
+		{
+			"path": "../../Site avec bootstrap"
+		},
+		{
+			"path": "../../ZozorOpenClassrrom"
+		},
+		{
+			"path": "../../module2-solution"
+		},
+		{
+			"path": "../../setup-development-environment"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "PRTCL"
+	}
+}

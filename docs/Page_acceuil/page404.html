@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel = "stylesheet" href = "page404.css" >
+  
+</head>
+<style>
+  * {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: #000000;
+}
+
+h2{
+  font-size: 120px;
+  font-weight: 100;
+}
+
+
+#navbar {
+  background-color: white;
+  transition: 0.7s;
+  padding : 5px 5px 0 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  box-shadow: 1px 1px 1px gray;
+}
+
+.linksNav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.4s;
+}
+
+#protocolLogo{
+  width: 80px;
+  transition: 0.4s;
+  padding: 12px;
+}
+
+.link:nth-child(1){
+    width: 100px;
+    transition: 0.4s;
+    padding: 12px;
+}
+
+.link2{
+    padding: 12px;
+    flex : 0.4;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: large;
+    margin-left: -20%;
+}
+
+.socialMedia{
+  flex : 0.5;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#gifMiddle{
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    border-style: solid;
+}
+
+#miseEnPage{
+    display: flex;
+    display: block;
+    margin : auto;
+    flex-direction: column;
+    width: 600px;
+    color: white;
+    margin-left: 30%;
+    margin-top : 12%;
+    border-style: solid;
+    border: solid white;
+}
+
+#title{
+    padding: 0 12% 0 12%;
+    text-align: center;
+}
+
+#boldTitle{
+    font-weight: 800;
+  }
+
+.burger{
+  display : none
+}
+
+.burger div{
+  transition: 0.4s;
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  margin: 5px;
+}
+
+
+@media screen and (max-width : 1180px) {
+  #miseEnPage{
+    margin-left: 20%;
+  }
+
+  .link2{
+    margin-left: -50%;
+  }
+}
+
+
+@media screen and (max-width : 900px) {
+  #miseEnPage{
+    margin-left: 10%;
+  }
+}
+
+@media screen and (max-width : 769px) {
+  .link2{
+    transform: translateY(-100%);
+  }
+}
+
+@media screen and (max-width : 768px) {
+
+  .link2{
+    position: absolute;
+    right: 0vh;
+    width: 100%;
+    height: 50vh;
+    top: 0vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    z-index: -1;
+    
+    
+  }
+
+  .link2 a{
+    opacity: 0;
+  }
+
+  .socialMedia{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .burger{
+    display: block;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+  .nav-active{
+    transform: translateY(0%);
+  }
+
+  .toggle .line1{
+    transition: 0.4s;
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+  .toggle .line2{
+    transition: 0.4s;
+    opacity: 0;
+  }
+  .toggle .line3{
+    transition: 0.4s;
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
+  
+}
+
+@keyframes navLinkFade{
+  from{
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width : 700px) {
+  #miseEnPage{
+    margin-left: 5%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  #navbar-right {
+    float: none;
+  }
+
+  .link:nth-child(1){
+    width: 90px;
+  }
+
+  #container{
+    color: aqua;
+    margin-top: 0px;
+  }
+
+  #miseEnPage{
+    margin-left: 0%;
+  }
+
+}
+</style>
+
+<body>
+
+<div class = "linksNav" id="navbar" >
+
+  <a href="./index.html"><img src="../Image/prtcl_3.png" class="link 1" > </a>
+
+  <nav class = "link2">
+    <div class = "socialMedia">
+      <a href = "https://discord.gg/sWa8rGK8" target="_blank"> <img src="../Image/discord.png" alt="icon of discord" style = "width: 30px;"></a> 
+      <a href = "https://twitter.com/theprotocolnft" target="_blank"> <img src="../Image/twitter.png" alt="icon of twitter" style = "width: 30px;"></a> 
+      <a href = "https://www.instagram.com/theprotocolnft/" target="_blank"> <img src="../Image/instagram.png" alt="icon of instagram" style = "width: 30px;"></a> 
+    </div>
+    
+  </nav>
+  <div class="burger">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+
+</div>
+
+<div id = "miseEnPage">
+    <div id = "title"><h2><div id = "boldTitle">404</div> not found</h2> </div>
+    <img src="../Image/page404.png" id = "gifMiddle">
+</div>
+
+</body>
+
+<script src="app.js"></script>
+</html>
